@@ -1,0 +1,255 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*
+--Navigation Bar Styling
+*/
+#TEAM31{
+  font-family: arial;
+  font-size: 150%
+}
+
+#navbar{
+  position: fixed;
+
+  width: 100%;
+  height:10%;
+
+  border-bottom: 3px solid black;
+  background-color: lightslategray;
+  color: black;
+
+  overflow: hidden;
+
+  opacity: 95%;
+}
+
+
+#navbar ul{
+  list-style: none;
+  text-align: center;
+}
+
+#navbar ul li{
+  display: inline-block;
+  vertical-align: top;
+
+  font-family: Helvetica;
+
+  margin: 0;
+  padding: 0.5rem;
+}
+#navbar ul li a{
+  color: white;
+  text-decoration: none;
+}
+/*
+--Landing Page Styling
+*/
+#landing_screen{
+  color:black;
+}
+
+#myVideo{
+  display: block;
+  position: absolute;
+
+  background-color: white;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  z-index: -100;
+}
+
+#title{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Helvetica;
+  color:crimson;
+}
+
+#title_text{
+  color:crimson;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/*
+--Sections Styling
+*/
+
+#problemstatement{
+  display: inline-block;
+  background-color:lightsteelblue;
+}
+
+
+.textpara{
+  width:40%;
+  margin: 2% 5% 5% 5%;
+  text-align: left;
+  float: left;
+  font-family: Helvetica;
+
+}
+
+.images{
+  width: 40%;
+  float: right;
+  margin: auto 5% 5% auto;
+  text-align: center;
+}
+
+
+.header{
+  font-size: 2.5rem;
+  margin: 2.5% 3% 0 3%;
+  width:50%;
+
+  float: left;
+  font-weight: bold;
+}
+
+#team{
+  display: inline-block;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#team_header{
+  font-size: 2.5rem;
+
+}
+.pfp{
+  display:inline;
+
+  width: 100%;
+  height: 40%;
+}
+
+.caption{
+  display:inline;
+  width:10%;
+}
+
+.column {
+  float: left;
+  width: 15%;
+  padding:2%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#systemspecs{
+  display: inline-block;
+  background-color:maroon;
+  color: white;
+}
+
+#mobileapp{
+  background-color: RosyBrown;
+  display: inline-block;
+}
+#blockdiagrams{
+  display: inline-block;
+  background-color: white;
+}
+
+.diagrams{
+  width: 80%;
+  float: center;
+  margin: 1% 5% 5% 5%;
+  text-align: center;
+
+  outline: 5px dashed black;
+
+}
+
+.cap{
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.fig{
+  margin: auto auto;
+}
+
+#listofdocuments{
+  background-color: CornflowerBlue;
+  text-align: center;
+  padding: 5% 5% 5% 5%;
+}
+
+#listofdocuments span{
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
+
+#listofdocuments li{
+  list-style-type: none;
+}
+/*
+--Footer Styling
+*/
+
+footer{
+  background-color: gray;
+  color: white;
+  width: 100%;
+  display: inline-block;
+
+  padding: 5% auto;
+  text-align: center;
+}
+
+footer li{
+  list-style-type: none;
+
+}
+
+/*
+--Body Styling
+*/
+
+body{
+  background-color: beige;
+}
+
+body h1{
+  color:  CadetBlue;
+  text-align: center;
+}
+
+body p{
+  text-align: center;
+}
+
+
+/*
+--Image link Styling
+*/
