@@ -359,11 +359,12 @@ figure{
 --Documents Styling
 */
 #listofdocuments{
+  display: inline-block;
   background-color: ghostwhite;
 
   text-align: center;
   padding: 5% 5% 5% 5%;
-  padding-bottom: 100%;
+  padding-bottom: 10%;
 }
 
 #listofdocuments span{
@@ -375,6 +376,11 @@ figure{
 
 #listofdocuments li{
   list-style-type: none;
+}
+
+.doccontain{
+  display: inline-block;
+  width: 100%;
 }
 
 .container{
