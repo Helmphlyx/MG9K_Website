@@ -6,9 +6,26 @@
 /*
 --Navigation Bar Styling
 */
+#logo{
+  display: inline-block;
+  float: left;
+  width: 4rem;
+  padding: 1%;
+
+
+}
+
 #TEAM31{
-  font-family: arial;
-  font-size: 150%
+  font-family: "garamond";
+  font-size: 150%;
+  font-weight: bold;
+
+  color: azure;
+  background-color: black;
+
+  margin-left: 10%;
+  margin-right: 10%;
+  opacity: 70%;
 }
 
 #navbar{
@@ -17,13 +34,18 @@
   width: 100%;
   height:10%;
 
-  border-bottom: 3px solid black;
+  border-bottom: 0.2rem solid aliceblue;
   background-color: lightslategray;
-  color: black;
+  color: azure;
+
+  background-image: url('mail.png');
+  background-repeat: no-repeat;
+  background-position: center;
 
   overflow: hidden;
 
   opacity: 95%;
+  z-index: 1;
 }
 
 
@@ -36,7 +58,7 @@
   display: inline-block;
   vertical-align: top;
 
-  font-family: Helvetica;
+  font-family: "courier new";
 
   margin: 0;
   padding: 0.5rem;
@@ -54,7 +76,7 @@
 
 #myVideo{
   display: block;
-  position: absolute;
+  position: fixed;
 
   background-color: white;
 
@@ -83,128 +105,269 @@
 
   font-size: 50px;
   font-weight: bold;
-  font-family: Helvetica;
-  color:crimson;
+  font-family: "copperplate";
+  color:aquamarine;
 }
 
 #title_text{
-  color:crimson;
+  color:aquamarine;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 /*
---Sections Styling
+--Problem Statement Styling
 */
 
-#problemstatement{
+#problemstatement, #systemspecs, #mobileapp, #blockdiagrams{
   display: inline-block;
-  background-color:lightsteelblue;
+  background-color:ghostwhite;
+  opacity: 95%;
+
+  font-family: garamond;
+  font-size: 0.8rem;
+  color: black;
+
+  padding-top: 10%;
+
+  width: 100%;
 }
 
+#contents{
+  width: 75%;
+}
 
-.textpara{
-  width:40%;
-  margin: 2% 5% 5% 5%;
+#problemstatement .header, #systemspecs .header, #mobileapp .header, #blockdiagrams .header{
+  font-family: "courier new";
+  font-size: 1.25rem;
+
+  color:  CadetBlue;
+
+  width: 100%;
+  padding-bottom: 3%;
+
+  text-align: center;
+  float: center;
+
+}
+
+.headcap{
+  font-family: "courier new";
+  font-size: 1rem;
+
+  color:  navy;
+
+  text-align: left;
+
+}
+
+.text{
+  width: 35%;
   text-align: left;
   float: left;
-  font-family: Helvetica;
 
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.textpara{
+  text-align: left;
+  float: left;
+
+  font-family: Helvetica;
 }
 
 .images{
-  width: 40%;
+  width: 50%;
+  padding-top: 3%;
+
+  position: relative;
+  text-align: right;
   float: right;
-  margin: auto 5% 5% auto;
-  text-align: center;
+
+  border-radius: 1rem;
+
+  padding-bottom: 10%;
+
+
 }
 
 
 .header{
   font-size: 2.5rem;
   margin: 2.5% 3% 0 3%;
-  width:50%;
 
-  float: left;
   font-weight: bold;
+
 }
 
+/*
+--Team Members Styling
+*/
 #team{
   display: inline-block;
   text-align: center;
-  background-color: black;
+
   color: white;
+
+  background-image: url('dots.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%;
+
+  padding-top: 5%;
+  padding-bottom: 10%;
+
+  opacity: 95%;
 }
 
 #team_header{
   font-size: 2.5rem;
+  font-family: garamond;
 
+  color: white;
 }
+
+#linelist{
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+
+  list-style: none;
+}
+
+#linelist li{
+  display: block;
+  flex: 0 1 auto;
+  list-style-type: none;
+}
+
+.vertline{
+  display: inline-block;
+  width: 100%;
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#l0{
+  color: aliceblue;
+}
+
+#l1{
+ color: gainsboro;
+}
+
+#l2{
+  color: darkgrey;
+}
+
+#l3{
+  color: dimgrey;
+}
+
+#l4{
+  color: black;
+}
+
+#pfplist{
+  display: flex;
+  align-items: stretch;
+
+  list-style: none;
+}
+
+#pfplist li{
+  display: block;
+  flex: 0 1 auto;
+  list-style-type: none;
+
+  width: 20%;
+  float: center;
+  vertical-align: center;
+}
+
+.name{
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
 .pfp{
   display:inline;
-
-  width: 100%;
-  height: 40%;
+  border-radius: 1rem;
+  width: 70%;
 }
 
 .caption{
   display:inline;
-  width:10%;
 }
 
-.column {
-  float: left;
-  width: 15%;
-  padding:2%;
-}
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+/*
+--Diagrams Styling
+*/
 
-#systemspecs{
-  display: inline-block;
-  background-color:maroon;
-  color: white;
-}
 
-#mobileapp{
-  background-color: RosyBrown;
-  display: inline-block;
-}
 #blockdiagrams{
   display: inline-block;
+  background-color:ghostwhite;
+  opacity: 95%;
+  width: 100%;
+
+  z-index: -1;
+}
+
+figure{
+  display: inline-block;
+  float: center;
+
+  text-align: center;
+
+  border: thin black solid;
   background-color: white;
+  background: rgba(128,128,128,0.7); /* newer browsers */
+
+
+  z-index: 1;
+
+  margin-bottom: 10%;
+  margin-left: 5%;
+
 }
 
 .diagrams{
+  display: inline-block;
   width: 80%;
+
   float: center;
-  margin: 1% 5% 5% 5%;
   text-align: center;
 
-  outline: 5px dashed black;
 
 }
 
 .cap{
-  font-size: 2.5rem;
   text-align: center;
-  text-decoration: underline;
+
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.fig{
-  margin: auto auto;
-}
-
+/*
+--Documents Styling
+*/
 #listofdocuments{
-  background-color: CornflowerBlue;
+  background-color: ghostwhite;
+
   text-align: center;
   padding: 5% 5% 5% 5%;
+  padding-bottom: 100%;
 }
 
 #listofdocuments span{
-  color: black;
+  color:  CadetBlue;
   text-align: center;
   margin: 0 auto;
   font-size: 2.5rem;
@@ -213,25 +376,121 @@
 #listofdocuments li{
   list-style-type: none;
 }
+
+.container{
+  display: inline-block;
+  float: left;
+  margin-left: 5%;
+}
+
+.container2{
+  display: inline-block;
+  float: left;
+  margin-left: 2%;
+}
+
+.slidecap{
+  margin-bottom: 5%;
+
+  font-family: "courier new";
+  font-weight: bold;
+
+  font-size: 1.5rem;
+}
+
+.doctype{
+  font-family: "courier new";
+  font-weight: bold;
+  font-size: 2rem;
+
+  text-decoration: underline;
+
+  color: navy;
+}
 /*
 --Footer Styling
 */
 
 footer{
-  background-color: gray;
+  padding-top: 5%;
+  padding-bottom: 10%;
+
+  background-color: black;
   color: white;
-  width: 100%;
-  display: inline-block;
 
-  padding: 5% auto;
   text-align: center;
+  font-family: "monaco";
 }
 
-footer li{
-  list-style-type: none;
+footer span{
+  font-size: 2rem;
+
+  text-decoration: underline;
+  font-family: "courier new";
+}
+
+footer a{
+  color: white;
+
+  font-weight: bold;
+  font-family: "courier new";
+
+  text-decoration: none;
 
 }
 
+footer p{
+  display: inline-block;
+  float: center;
+
+  padding-bottom: 2%;
+  width: 55%;
+
+}
+
+footer ul{
+    list-style: none;
+
+}
+
+footer ul li{
+  display: inline-block;
+  text-decoration: underline;
+
+  vertical-align: top;
+
+  color: black;
+  font-family: "courier new";
+
+  margin: 0;
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+}
+
+#contact{
+  font-size: 1.5rem;
+  width: 60%;
+}
+
+
+#dash{
+  display: inline-block;
+  float: center;
+
+  text-decoration: none;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+#footerimg{
+  display: inline-block;
+  float: center;
+  margin-left: 50%;
+}
+
+#end{
+  font-style: italic;
+}
 /*
 --Body Styling
 */
